@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<testsuites>
+  <testsuite name="Chrome 26.0 (Mac)" package="undefined" timestamp="2013-04-14T01:15:22" id="0" hostname="Shiraz.local" tests="1" errors="0" failures="1" time="0.004">
+    <properties>
+      <property name="browser.fullName" value="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.43 Safari/537.31"/>
+    </properties>
+    <testcase name="adds two numbers together" time="0.004" classname="Chrome 26.0 (Mac).JavaScript addition operator">
+      <failure type="">Expected 3 to equal 4.
+Error: Expected 3 to equal 4.
+    at null.&lt;anonymous&gt; (/Users/upkar/projects/angular/eggheadtutorial/spec/sample.spec.js:3:23)
+</failure>
+    </testcase>
+    <system-out><![CDATA[
+]]></system-out>
+    <system-err/>
+  </testsuite>
+</testsuites>
