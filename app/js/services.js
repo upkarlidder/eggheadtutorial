@@ -8,4 +8,5 @@
 angular.module('myApp.services', []).
   factory('Data', function(){
   	return {message:"I am data from a service"};
-  });
+  })
+  .value('version', '0.1');
