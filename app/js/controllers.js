@@ -3,9 +3,11 @@
 /* Controllers */
 
 angular.module('myApp.controllers', []).
-  controller('MyCtrl1', [function() {
-
+  controller('FirstCtrl', ['$scope','Data',function($scope, Data) {
+  	$scope.data = Data;
+  	console.log('exiting first controller');
   }])
-  .controller('MyCtrl2', [function() {
-
+  .controller('SecondCtrl', ['$scope','Data',function($scope, Data) {
+  	$scope.data = Data;
+  	console.log('exiting second controller');
   }]);
