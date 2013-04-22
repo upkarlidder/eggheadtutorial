@@ -2,14 +2,20 @@
 
 /* Filters */
 
-angular.module('myApp.filters', []).
-  filter('interpolate', ['version', function(version) {
+angular.module('myApp.filters', [])
+
+  .filter('interpolate', ['version', function(version) {
     return function(text) {
       return String(text).replace(/\%VERSION\%/mg, version);
     }
   }])
-  .filter('reverse',['Data', function(Data){
+
+
+  .filter('reverse',[function(){
   	return function(str){
-  		return Data.message + " ** " + str.split("").reverse().join("");
+  		if(str)
+  			return str.split("").reverse().join("");
+  		else 
+  			return str;
   	}
   }]);
